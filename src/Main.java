@@ -1,6 +1,13 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 void main() {
+    try {
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+    } catch (Exception e) {
+        // стандартный вид
+    }
+
     var scanner = new Scanner(System.in);
 
     System.out.println("=".repeat(60));
